@@ -11,6 +11,7 @@ import { Testimonials } from '@/components/sections/testimonials';
 import { FAQ } from '@/components/sections/faq';
 import { FinalCTA } from '@/components/sections/final-cta';
 import { BookConsultation } from '@/components/sections/book-consultation';
+import { Portfolio } from '@/components/sections/portfolio';
 
 export default function HomePage() {
   return (
@@ -19,9 +20,10 @@ export default function HomePage() {
       <Hero />
       <TrustedBy />
       <InsightsCarousel />
-      <Services />
-      <PainPoints />
-      <Solutions />
+      {/* <Services /> */}
+      {/* <PainPoints />
+      <Solutions /> */}
+      <Portfolio />
       <Process />
       <Testimonials />
       <FAQ />
