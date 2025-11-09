@@ -33,7 +33,7 @@ export function Hero() {
                 variants={fadeInUp}
                 transition={{ delay: 0.2 }}
               >
-                <span className="h-2 w-2 rounded-full bg-white" /> Bank‑accepted reports
+                <span className="h-2 w-2 rounded-full bg-white" /> IVS‑compliant Valuation Reports
               </motion.span>
               <motion.h1
                 className="mt-4 text-3xl font-black leading-tight md:text-5xl lg:text-6xl"

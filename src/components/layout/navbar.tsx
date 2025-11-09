@@ -9,7 +9,7 @@ export function Navbar() {
           <div className="grid h-7 w-7 place-items-center rounded-lg bg-[var(--pw-primary)] text-white shadow-sm">
             <span className="text-xs font-bold">PW</span>
           </div>
-          <span className="text-sm font-semibold tracking-wide group-hover:text-[var(--pw-primary)]">Propertywise Ltd</span>
+          <span className="text-sm font-semibold tracking-wide group-hover:text-[var(--pw-primary)]">Propertywise (T) Ltd</span>
         </a>
         <ul className="hidden items-center gap-8 text-sm md:flex">
           <li className="relative group">
