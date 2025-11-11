@@ -2,47 +2,21 @@
 
 import { motion } from 'framer-motion';
 import { useScrollAnimation, fadeInUp } from '@/hooks/useScrollAnimation';
+import Image from 'next/image';
 
 export function TrustedBy() {
-  const companies = [
-    "Agricultural Inputs Trust Fund (AGTF)",
-    "AM Steel Rolling Company",
-    "Arusha Lutheran Medical Centre (ALMC)",
-    "Bakhresa Food Products Limited",
-    "Bidyanguze Group (T) Limited",
-    "Bugando University College of Health Sciences",
-    "Cargil Tanzania Limited",
-    "COPEC Petroleum Limited",
-    "CRDB Bank Limited",
-    "Dar es Salaam Community Bank Limited (DCB)",
-    "Dar Village Limited",
-    "Dhando Road Haulage Limited",
-    "East African Apartments Limited",
-    "Eco Energy (T) Limited",
-    "Evangelist Lutheran Church of Tanzania (ELCT)",
-    "First National Bank (T) Limited (FNB)",
-    "Hass Petroleum Limited",
-    "KCB Bank Tanzania Building (KCB)",
-    "National Microfinance Bank PLC (NMB)",
-    "NIC Bank Tanzania Limited (NIC)",
-    "Nyarusai Limited",
-    "OIKO Credit Tanzania Limited",
-    "Pangani Farms Limited",
-    "RAK Properties, Ras Al Khaimah, UAE",
-    "St. Peter's Catholic Church in Dar Es Salaam City",
-    "Stage Farm Limited",
-    "Synarge Group of Companies",
-    "TANINGRA Contractors Limited",
-    "Tanzania Assemblies of God Church (TAG)",
-    "Tanzania Ports Authority (TPA)",
-    "Tumaini University, Iringa",
-    "VITRECS Oil Mill Tanzania Limited",
-    "World Oil Limited",
-    "ZEK Group International"
+  const logos = [
+    { src: '/logos/logo1.png', alt: 'Azania Bank', name: 'Azania Bank' },
+    { src: '/logos/logo2.png', alt: 'Absa Bank', name: 'Absa Bank' },
+    { src: '/logos/logo3.png', alt: 'NMB Bank', name: 'NMB Bank' },
+    { src: '/logos/logo4.png', alt: 'Standard Chartered', name: 'Standard Chartered' },
+    { src: '/logos/logo5.png', alt: 'Mwanga Hakika Bank', name: 'Mwanga Hakika Bank' },
+    { src: '/logos/logo6.png', alt: 'BRAC Bank', name: 'BRAC Bank' },
+    { src: '/logos/logo7.png', alt: 'Taifa Gas', name: 'Taifa Gas' }
   ];
 
   // Duplicate the array to create seamless loop
-  const duplicatedCompanies = [...companies, ...companies];
+  const duplicatedLogos = [...logos, ...logos];
 
   const { ref, isInView } = useScrollAnimation();
 
@@ -62,23 +36,29 @@ export function TrustedBy() {
         {/* Scrolling container */}
         <div className="relative w-full overflow-hidden">
           <motion.div
-            className="flex gap-8 whitespace-nowrap"
+            className="flex items-center gap-12 whitespace-nowrap"
             animate={{
               x: [-1000, -2000]
             }}
             transition={{
-              duration: 60,
+              duration: 40,
               repeat: Infinity,
               ease: "linear"
             }}
           >
-            {duplicatedCompanies.map((company, index) => (
-              <span
+            {duplicatedLogos.map((logo, index) => (
+              <div
                 key={index}
-                className="text-sm font-medium text-gray-600 hover:text-[var(--pw-primary)] transition-colors duration-300"
+                className="flex-shrink-0 hover:scale-110 transition-transform duration-300"
               >
-                {company}
-              </span>
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  width={120}
+                  height={60}
+                  className="h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
             ))}
           </motion.div>
         </div>
