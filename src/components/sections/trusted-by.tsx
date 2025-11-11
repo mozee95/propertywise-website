@@ -12,7 +12,8 @@ export function TrustedBy() {
     { src: '/logos/logo4.png', alt: 'Standard Chartered', name: 'Standard Chartered' },
     { src: '/logos/logo5.png', alt: 'Mwanga Hakika Bank', name: 'Mwanga Hakika Bank' },
     { src: '/logos/logo6.png', alt: 'BRAC Bank', name: 'BRAC Bank' },
-    { src: '/logos/logo7.png', alt: 'Taifa Gas', name: 'Taifa Gas' }
+    { src: '/logos/logo7.png', alt: 'Taifa Gas', name: 'Taifa Gas' },
+    { src: '/logos/logo8.png', alt: 'Tanzania Air Services Ltd', name: 'Tanzania Air Services Ltd' },
   ];
 
   // Duplicate the array to create seamless loop
@@ -30,7 +31,7 @@ export function TrustedBy() {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
         >
-          Trusted by Leading Institutions
+          Some of the companies that trust us
         </motion.h2>
 
         {/* Scrolling container */}
@@ -56,7 +57,7 @@ export function TrustedBy() {
                   alt={logo.alt}
                   width={120}
                   height={60}
-                  className="h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                  className="h-12 w-auto object-contain transition-all duration-300"
                 />
               </div>
             ))}

@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/20 bg-white/20 backdrop-blur-md supports-[backdrop-filter]:bg-white/10">
@@ -6,9 +8,13 @@ export function Navbar() {
         aria-label="Primary"
       >
         <a href="#" className="group flex items-center gap-2">
-          <div className="grid h-7 w-7 place-items-center rounded-lg bg-[var(--pw-primary)] text-white shadow-sm">
-            <span className="text-xs font-bold">PW</span>
-          </div>
+          <Image
+            src="/logos/website-logo.jpeg"
+            alt="Propertywise Logo"
+            width={32}
+            height={32}
+            className="h-8 w-8 object-contain"
+          />
           <span className="text-sm font-semibold tracking-wide group-hover:text-[var(--pw-primary)]">Propertywise (T) Ltd</span>
         </a>
         <ul className="hidden items-center gap-8 text-sm md:flex">
