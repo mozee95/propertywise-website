@@ -14,6 +14,23 @@ export function TrustedBy() {
     { src: '/logos/logo6.png', alt: 'BRAC Bank', name: 'BRAC Bank' },
     { src: '/logos/logo7.png', alt: 'Taifa Gas', name: 'Taifa Gas' },
     { src: '/logos/logo8.png', alt: 'Tanzania Air Services Ltd', name: 'Tanzania Air Services Ltd' },
+    { src: '/logos/logo9.png', alt: 'National Bank of Commerce', name: 'National Bank of Commerce' },
+    { src: '/logos/logo10.png', alt: 'Stanbic Bank', name: 'Stanbic Bank' },
+    { src: '/logos/logo11.png', alt: 'Bakhresa Group', name: 'Bakhresa Group' },
+    { src: '/logos/logo12.png', alt: 'North Engineering Works', name: 'North Engineering Works' },
+    { src: '/logos/logo13.png', alt: 'SBC Tanzania', name: 'SBC Tanzania' },
+    { src: '/logos/logo14.png', alt: 'Twyford Tanzania Ltd', name: 'Twyford Tanzania Ltd' },
+    { src: '/logos/logo15.png', alt: 'Azania', name: 'Azania' }, 
+    { src: '/logos/logo16.png', alt: 'Meru', name: 'Meru' },  
+    { src: '/logos/logo17.png', alt: 'Dar es salaam Corridor Group', name: 'DCG' },
+    { src: '/logos/logo18.png', alt: 'KingLion', name: 'KingLion' },
+    { src: '/logos/logo19.png', alt: 'Cocacola Kwanza Limited', name: 'Cocacola Kwanza Limited' },
+    { src: '/logos/logo20.png', alt: 'Alaf Limited', name: 'Alaf Limited' },
+    { src: '/logos/logo21.png', alt: 'Serena Hotel', name: 'Serena Hotel' },
+    // { src: '/logos/logo22.png', alt: 'Dar Village', name: 'Dar Village' },
+    { src: '/logos/logo23.png', alt: 'MMI Steel Limited', name: 'MMI Steel Limited' },
+    
+    
   ];
 
   // Duplicate the array to create seamless loop
